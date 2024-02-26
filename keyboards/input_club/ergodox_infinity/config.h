@@ -34,6 +34,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     get_mods() == (MOD_BIT(KC_LSFT) | MOD_BIT(KC_RSFT)) \
 )
 
+#define EE_HANDS
+
 /* Serial config (for communication between halves) */
 #define SERIAL_USART_DRIVER SD1  // Only true for the master half
 #define SERIAL_USART_CONFIG { (SERIAL_USART_SPEED), } // Only field is speed
