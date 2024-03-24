@@ -30,7 +30,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
  *  |------+------'      `------|   B  | ,------.    ,------. |   K  |------'      `------+------|
  *  |   Z  |                    `------' | C-B  |    | C-B  | `------'                    |   /  |
  *  `------'           ,------------------------.    ,------------------------.           `------'
- *                     |  Meh | L_Tb |Enter |            | Space| R_Bs | Hyper|
+ *                     |L_Ret | Tab  | Meh  |            | Hyper| Space| R_Bs |
  *                     `--------------------'            `--------------------'
  */
     [_COLEMAK_L] = LAYOUT_split_3x5_4
@@ -41,8 +41,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
 /* R */ KC_H,         RSFT_T(KC_N), RCTL_T(KC_E),        RALT_T(KC_I),   RGUI_T(KC_O),
 /* L */ KC_Z,         KC_X,         KC_C,                LT(_NAV, KC_V), KC_B,
 /* R */ KC_K,         KC_M,         KC_COMM,             KC_DOT,         KC_SLSH,
-/* L */               KC_MEH,       LT(_LOWER, KC_TAB),  KC_ENT,         LCTL(KC_B),
-/* R */ RCTL(KC_B),   KC_SPC,       LT(_RAISE, KC_BSPC), KC_HYPR
+/* L */               LT(_LOWER, KC_ENT), KC_TAB,        KC_MEH,         LCTL(KC_B),
+/* R */ RCTL(KC_B),   KC_HYPR,      KC_SPC,              LT(_RAISE, KC_BSPC)
     ),
 
 /*  COLEMAK_R (CAGS)
@@ -67,8 +67,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
 /* R */ KC_H,           RSFT_T(KC_N), RGUI_T(KC_E),        RALT_T(KC_I),   RCTL_T(KC_O),
 /* L */ KC_Z,           KC_X,         KC_C,                LT(_NAV, KC_V), KC_B,
 /* R */ KC_K,           KC_M,         KC_COMM,             KC_DOT,         KC_SLSH,
-/* L */                 KC_MEH,       LT(_LOWER, KC_TAB),  KC_ENT,         LCTL(KC_B),
-/* R */ RCTL(KC_B),     KC_SPC,       LT(_RAISE, KC_BSPC), KC_HYPR
+/* L */                 LT(_LOWER, KC_ENT), KC_TAB,        KC_MEH,         LCTL(KC_B),
+/* R */ RCTL(KC_B),     KC_HYPR,      KC_SPC,              LT(_RAISE, KC_BSPC)
     ),
 
 /*  _NAV
